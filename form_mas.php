@@ -36,7 +36,8 @@
 
 // obj_form, obj_var, obj_text
 
-
+// пример
+/*
     $obj_var= 'action ="handler.php"';
 
     $obj_text = 'abajsndjnakdnaksnd';
@@ -56,7 +57,7 @@
     echo $textarea->show($obj_var, $obj_text);
 
     echo $form->show_end();
-
+*/
 
 
  ?>
