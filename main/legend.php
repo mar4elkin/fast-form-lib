@@ -1,0 +1,26 @@
+<?php
+   namespace Main;
+   class Legend
+   {
+      public function show($obj_var, $obj_text)
+      {
+         if (preg_match("/(accesskey|align|title)/",$obj_var ))
+         {
+           include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_legend.php';
+
+           unset($obj_var, $obj_text);
+           return;
+           exit();
+
+         } else {
+
+           echo "legend not ok";
+
+           unset($obj_var, $obj_text);
+           return false;
+           exit();
+         }
+      }
+   }
+
+ ?>
