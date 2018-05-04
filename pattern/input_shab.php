@@ -1,1 +1,1 @@
-<input <?php $obj_input; ?> /> <?= $obj_text; ?>
+<input <?= $obj_var ?> /> <?= $obj_text; ?>

@@ -6,6 +6,10 @@
       {
          if (preg_match("/(action|autocomplete|enctype|method|name|novalidate|target)/", $obj_var))
       {
+         echo '<pre>';
+
+         print_r($obj_var);
+
          include MAIN .'/pattern/form_shab.php';
          return;
          exit();

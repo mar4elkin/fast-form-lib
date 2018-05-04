@@ -1,1 +1,1 @@
-<label <?php $obj_lable; ?>> <?=$obj_text; ?> </label>
+<label <?= $obj_var ?>> <?=$obj_text; ?> </label>

@@ -1,1 +1,1 @@
-<output <?php $obj_select; ?>> <?=$obj_text; ?> </output>
+<output <?= $obj_var ?>> <?=$obj_text; ?> </output>

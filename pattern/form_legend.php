@@ -1,1 +1,1 @@
-<legend <?php $obj_legend; ?>> <?=$obj_text; ?> </legend>
+<legend <?= $obj_var ?>> <?=$obj_text; ?> </legend>

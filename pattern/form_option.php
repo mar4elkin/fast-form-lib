@@ -1,1 +1,1 @@
-<option <?php $obj_option; ?>> <?=$obj_text; ?> </option>
+<option <?= $obj_var ?>> <?=$obj_text; ?> </option>

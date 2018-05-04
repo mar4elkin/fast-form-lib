@@ -1,1 +1,1 @@
-<textarea <?php $obj_textarea; ?>>  <?php $obj_text; ?> </textarea>
+<textarea <?= $obj_var ?>>  <?php $obj_text; ?> </textarea>

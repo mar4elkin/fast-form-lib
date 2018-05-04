@@ -1,1 +1,1 @@
-<fieldset <?php $obj_fieldset; ?>> <?=$obj_text; ?> </fieldset>
+<fieldset <?= $obj_var ?>> <?=$obj_text; ?> </fieldset>

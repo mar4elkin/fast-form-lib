@@ -1,1 +1,1 @@
-<form <?php $obj_form; ?>>
+<form <?= $obj_var ?>>

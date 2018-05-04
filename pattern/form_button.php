@@ -1,1 +1,1 @@
-<button <?php $obj_button; ?>> <?=$obj_text; ?> </button>
+<button <?= $obj_var ?>> <?=$obj_text; ?> </button>

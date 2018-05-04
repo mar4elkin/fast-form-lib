@@ -16,7 +16,7 @@
         case 'button':
          return new Button();
          break;
-        case 'lable':             //   АТРИБУТЫ СДЕЛАННЫ. ВСТАВКИ НЕ СДЕЛАННЫ
+        case 'lable':            
           return new Lable();
           break;
         case 'legend':

@@ -39,8 +39,8 @@ define('MAIN', __DIR__);
 // obj_form, obj_var, obj_text
 
 // пример
-
-    $obj_var= 'action ="handler.php"';
+/*
+    $obj_var= 'target="имя окна"';
 
     $obj_text = 'abajsndjnakdnaksnd';
 
@@ -60,6 +60,6 @@ define('MAIN', __DIR__);
 
     echo $form->show_end();
 
-
+*/
 
  ?>
