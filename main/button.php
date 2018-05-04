@@ -7,7 +7,7 @@
       {
          if (preg_match("/(accesskey|autofocus|disabled|form|formaction|formenctype|formmethod|formnovalidate|formtarget|name|type|value)/", $obj_var))
          {
-           include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_button.php';
+           include MAIN .'/pattern/form_button.php';
            return;
            exit();
 

@@ -7,7 +7,7 @@
       {
         if (preg_match("/(disabled|form|title)/", $obj_var))
         {
-          include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_fieldset.php';
+          include MAIN .'/pattern/form_fieldset.php';
 
           unset($obj_var, $obj_text);
           return;

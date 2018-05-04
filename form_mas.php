@@ -2,13 +2,15 @@
   use Main\Factory as Factory;
 
   spl_autoload_register(function($class) {
-    $path = strtolower(str_replace('\\', '/', $class)) . '.php';
+   $path = __DIR__ . '/' . strtolower(str_replace('\\', '/', $class)) . '.php';
     if (file_exists($path)) {
-      require_once $path;
-    } else {
-      echo $path;
-    }
-  });
+    require_once $path;
+   } else {
+  echo $path;
+  }
+});
+
+define('MAIN', __DIR__);
 // описание типов
    $type_form = 'form';
    $type_input = 'input';
@@ -37,7 +39,7 @@
 // obj_form, obj_var, obj_text
 
 // пример
-/*
+
     $obj_var= 'action ="handler.php"';
 
     $obj_text = 'abajsndjnakdnaksnd';
@@ -57,7 +59,7 @@
     echo $textarea->show($obj_var, $obj_text);
 
     echo $form->show_end();
-*/
+
 
 
  ?>

@@ -4,9 +4,10 @@
    {
       public function show($obj_var, $obj_text)
       {
-         include_once $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_select.php';
          if (preg_match("/(accesskey|autofocus|disabled|form|multiple|name|required|size|tabindex)/", $obj_var))
          {
+
+           include MAIN .'/pattern/form_select.php';
            unset($obj_var, $obj_text);
            return;
            exit();

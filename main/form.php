@@ -6,7 +6,7 @@
       {
          if (preg_match("/(action|autocomplete|enctype|method|name|novalidate|target)/", $obj_var))
       {
-         include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_shab.php';
+         include MAIN .'/pattern/form_shab.php';
          return;
          exit();
 
@@ -21,7 +21,7 @@
       }
       public function show_end()
       {
-        include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_end.php';
+        include MAIN .'/pattern/form_end.php';
       }
    }
 

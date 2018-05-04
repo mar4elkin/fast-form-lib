@@ -6,7 +6,7 @@
       {
          if (preg_match("/(accesskey|autofocus|cols|disabled|form|maxlenght|name|placeholder|readonly|required|rows|tabindex|wrap)/", $obj_var))
         {
-         include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_textarea.php';
+         include MAIN .'/pattern/form_textarea.php';
          unset ($obj_var, $obj_text);
          return;
          exit();

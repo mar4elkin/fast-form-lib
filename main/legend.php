@@ -6,7 +6,7 @@
       {
          if (preg_match("/(accesskey|align|title)/",$obj_var ))
          {
-           include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_legend.php';
+           include MAIN .'/pattern/form_legend.php';
 
            unset($obj_var, $obj_text);
            return;

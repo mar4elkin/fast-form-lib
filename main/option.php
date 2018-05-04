@@ -4,7 +4,7 @@
    {
       public function show($obj_var, $obj_text)
       {
-         include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_option.php';
+         include MAIN .'/pattern/form_option.php';
 
          if (preg_match("/(disabled|lable|selected|value)/", $obj_var))
          {

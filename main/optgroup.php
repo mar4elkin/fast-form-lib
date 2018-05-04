@@ -7,7 +7,7 @@
 
          if (preg_match("/(disabled|lable)/", $obj_var))
           {
-            include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_optgroup.php';
+            include MAIN .'/pattern/form_optgroup.php';
 
             unset($obj_var, $obj_text);
             return;

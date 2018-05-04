@@ -7,7 +7,7 @@
 
          if (preg_match("/(accesskey|for)/",$obj_var))
          {
-           include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/form_lable.php';
+           include MAIN .'/pattern/form_lable.php';
 
            unset($obj_var, $obj_text);
            return;

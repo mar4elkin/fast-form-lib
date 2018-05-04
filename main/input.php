@@ -8,7 +8,7 @@ namespace Main;
 
      if (preg_match("/(accept|accesskey|align|alt|autocomplete|autofocus|border|cheched|disabled|form|formaction|formenctype|formmethod|formnovalidate|formtarget|list|max|maxlenght|min|multiple|name|pattern|placeholder|readonly|required|size|src|step|tabindex|type|value)/", $obj_var))
      {
-       include $_SERVER['DOCUMENT_ROOT'] .'/lib/pattern/input_shab.php';
+       include MAIN .'/pattern/input_shab.php';
        unset($obj_var, $obj_text);
        return;
        exit();
