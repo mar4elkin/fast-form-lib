@@ -24,17 +24,27 @@ When your done that you can use library.
     $obj_text = 'some text';
 
     echo $form->show($obj_var);
+
     $obj_var = 'type ="submit" value="send"';
+
     echo $input->show($obj_var, $obj_text);
 
     $obj_var = 'rows="10" cols="45" name="text"';
+
     echo $textarea->show($obj_var, $obj_text);
 
     $obj_var = 'type ="submit" value="send"';
+
     $obj_text = "sfhkj";
+
     echo $input->show($obj_var, $obj_text);
 
     $obj_var = 'cols="2323245" name="text"';
+
     echo $textarea->show($obj_var, $obj_text);
 
     echo $form->show_end();
+
+### last one but not least
+I am still working on the library, soon I will update readme. I want to add more examples...
+And of course fix bugs. Also I'd like to test all html tags in library...
