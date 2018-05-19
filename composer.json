@@ -7,11 +7,7 @@
       "email": "marktamarov2001@gmail.com"
     }
   ],
-<<<<<<< HEAD
   "minimum-stability": "dev",
-=======
-  "minimum-stability": "stable",
->>>>>>> 874089c44d8feac5fb7826d525349bb840ce3a44
   "require": {
     "php": "^5.3.3 || ^7.0"
   },

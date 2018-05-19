@@ -33,33 +33,5 @@ define('MAIN', __DIR__);
    $option = (Factory::getClass($type_option));
    $select = (Factory::getClass($type_select));
    $textarea = (Factory::getClass($type_textarea));
-//хз
-
-
-// obj_form, obj_var, obj_text
-
-// пример
-/*
-    $obj_var= 'target="имя окна"';
-
-    $obj_text = 'abajsndjnakdnaksnd';
-
-    echo $form->show($obj_var);
-    $obj_var = 'type ="submit" value="send"';
-    echo $input->show($obj_var, $obj_text);
-
-    $obj_var = 'rows="10" cols="45" name="text"';
-    echo $textarea->show($obj_var, $obj_text);
-
-    $obj_var = 'type ="submit" value="send"';
-    $obj_text = "sfhkj";
-    echo $input->show($obj_var, $obj_text);
-
-    $obj_var = 'cols="2323245" name="text"';
-    echo $textarea->show($obj_var, $obj_text);
-
-    echo $form->show_end();
-
-*/
 
  ?>

@@ -8,7 +8,7 @@ To install my library you need to install composer
 
 link: [getcomposer](https://getcomposer.org/) After that type request in bash(or cmd)
 
-    composer require mar4elkin/fast-form-lib @dev 
+    composer require mar4elkin/fast-form-lib @dev
 
 ![Disabled Device Example](https://image.ibb.co/jzTJfo/composer.png)   
 
@@ -17,3 +17,24 @@ at first you need to connect your main file using autoloader, for example in my 
 When your done that you can use library.
 
 ### Examples
+
+
+    $obj_var= 'target="name of window"';
+
+    $obj_text = 'some text';
+
+    echo $form->show($obj_var);
+    $obj_var = 'type ="submit" value="send"';
+    echo $input->show($obj_var, $obj_text);
+
+    $obj_var = 'rows="10" cols="45" name="text"';
+    echo $textarea->show($obj_var, $obj_text);
+
+    $obj_var = 'type ="submit" value="send"';
+    $obj_text = "sfhkj";
+    echo $input->show($obj_var, $obj_text);
+
+    $obj_var = 'cols="2323245" name="text"';
+    echo $textarea->show($obj_var, $obj_text);
+
+    echo $form->show_end();
