@@ -2,7 +2,7 @@
    namespace Main;
    class Select
    {
-      public function show($obj_var, $obj_text)
+      public function show($obj_var)
       {
          if (preg_match("/(accesskey|autofocus|disabled|form|multiple|name|required|size|tabindex)/", $obj_var))
          {
@@ -20,6 +20,10 @@
            return false;
            exit();
          }
+      }
+      public function show_end()
+      {
+        include MAIN .'/pattern/form_select_end.php';
       }
    }
 

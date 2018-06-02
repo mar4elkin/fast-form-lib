@@ -33,5 +33,27 @@ define('MAIN', __DIR__);
    $option = (Factory::getClass($type_option));
    $select = (Factory::getClass($type_select));
    $textarea = (Factory::getClass($type_textarea));
+//test
+
+
+   $obj_var= 'target="name of window"';
+   $obj_text = 'some text';
+   echo $form->show($obj_var, $obj_text);
+   //echo $input->show('input type="radio"', 'Internet Explorer');
+   $obj_var = 'size="7" name="hero';
+   echo $select->show($obj_var);
+   $obj_var = 'value="t1"';
+   $obj_text = 'sdasdasdasd';
+   echo $option->show($obj_var, $obj_text);
+   echo $option->show($obj_var, $obj_text);
+   echo $option->show($obj_var, $obj_text);
+    echo $option->show($obj_var, $obj_text);
+     echo $option->show($obj_var, $obj_text);
+      echo $option->show($obj_var, $obj_text);
+       echo $option->show($obj_var, $obj_text);
+   echo $select->show_end();
+   echo $form->show_end();
+
+
 
  ?>
