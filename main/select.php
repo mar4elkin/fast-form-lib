@@ -8,7 +8,7 @@
          {
 
            include MAIN .'/pattern/form_select.php';
-           unset($obj_var, $obj_text);
+           unset($obj_var);
            return;
            exit();
 

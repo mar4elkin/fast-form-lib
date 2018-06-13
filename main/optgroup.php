@@ -9,7 +9,7 @@
           {
             include MAIN .'/pattern/form_optgroup.php';
 
-            unset($obj_var, $obj_text);
+            unset($obj_var);
             return;
             exit();
 
