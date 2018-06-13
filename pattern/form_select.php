@@ -1,1 +1,1 @@
-<output <?= $obj_var ?>> <?=$obj_text; ?> </output>
+<select <?= $obj_var ?>> 

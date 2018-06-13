@@ -2,14 +2,14 @@
    namespace Main;
    class Optgroup
    {
-      public function show($obj_var, $obj_text)
+      public function show($obj_var)
       {
 
          if (preg_match("/(disabled|lable)/", $obj_var))
           {
             include MAIN .'/pattern/form_optgroup.php';
 
-            unset($obj_var, $obj_text);
+            unset($obj_var);
             return;
             exit();
 
@@ -21,6 +21,10 @@
             return false;
             exit();
           }
+      }
+      public function show_end()
+      {
+        include MAIN .'/pattern/form_optgroup_end.php';
       }
    }
 

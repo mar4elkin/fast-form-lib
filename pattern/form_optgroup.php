@@ -1,1 +1,1 @@
-<option <?= $obj_var ?>> <?=$obj_text; ?> </option>
+<optgroup <?= $obj_var ?>> 
