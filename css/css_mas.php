@@ -13,26 +13,10 @@
 define('MAIN', __DIR__);
 // описание типов
    $type_color = 'color';
-   $type_input = 'input';
-   $type_button = 'button';
-   $type_lable = 'lable';
-   $type_legend = 'legend';
-   $type_fieldset = 'fieldset';
-   $type_optgroup = 'optgroup';
-   $type_option = 'option';
-   $type_select = 'select';
-   $type_textarea = 'textarea';
+
 //соодение с фермой
    $color = (Factory::getClass($type_color));
-   $input = (Factory::getClass($type_input));
-   $button = (Factory::getClass($type_button));
-   $lable = (Factory::getClass($type_lable));
-   $legend = (Factory::getClass($type_legend));
-   $fieldset = (Factory::getClass($type_fieldset));
-   $optgroup = (Factory::getClass($type_optgroup));
-   $option = (Factory::getClass($type_option));
-   $select = (Factory::getClass($type_select));
-   $textarea = (Factory::getClass($type_textarea));
+
 
    echo $color->show('red');
 
