@@ -2,12 +2,12 @@
    namespace Main;
    class Textarea
    {
-      public function show($obj_var, $obj_text)
+      public function show($obj_var="", $obj_text="", $obj_css="")
       {
          if (preg_match("/(accesskey|autofocus|cols|disabled|form|maxlenght|name|placeholder|readonly|required|rows|tabindex|wrap)/", $obj_var))
         {
          include MAIN .'/pattern/form_textarea.php';
-         unset ($obj_var, $obj_text);
+         unset ($obj_var, $obj_text, $obj_css);
          return;
          exit();
 
@@ -15,7 +15,7 @@
 
           echo "textarea not ok";
 
-          unset($obj_var, $obj_text);
+          unset($obj_var, $obj_text, $obj_css);
           return false;
           exit();
         }

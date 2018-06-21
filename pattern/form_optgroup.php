@@ -1,1 +1,1 @@
-<optgroup <?= $obj_var ?>> 
+<optgroup style="<?= $obj_css ?>" <?= $obj_var ?>> 

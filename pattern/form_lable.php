@@ -1,1 +1,1 @@
-<label <?= $obj_var ?>> <?=$obj_text; ?> </label>
+<label style="<?= $obj_css ?>" <?= $obj_var ?>> <?=$obj_text; ?> </label>

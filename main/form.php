@@ -2,7 +2,7 @@
    namespace Main;
    class Form
    {
-      public function show($obj_var)
+      public function show($obj_var="", $obj_css="")
       {
          if (preg_match("/(action|autocomplete|enctype|method|name|novalidate|target)/", $obj_var))
       {
@@ -14,7 +14,7 @@
      } else {
         echo "form not ok";
 
-        unset($obj_var);
+        unset($obj_var, $obj_css);
         return false;
         exit();
       }

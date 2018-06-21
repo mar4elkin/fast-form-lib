@@ -1,1 +1,1 @@
-<input <?= $obj_var ?> /> <?= $obj_text; ?>
+<input style="<?= $obj_css ?>" <?= $obj_var ?> /> <?= $obj_text; ?>

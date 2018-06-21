@@ -2,14 +2,14 @@
    namespace Main;
    class Lable
    {
-      public function show($obj_var, $obj_text)
+      public function show($obj_var="", $obj_text="", $obj_css="")
       {
 
          if (preg_match("/(accesskey|for)/",$obj_var))
          {
            include MAIN .'/pattern/form_lable.php';
 
-           unset($obj_var, $obj_text);
+           unset($obj_var, $obj_text, $obj_css);
            return;
            exit();
 
@@ -17,7 +17,7 @@
 
            echo "lable not ok";
 
-           unset($obj_var, $obj_text);
+           unset($obj_var, $obj_text, $obj_css);
            return false;
            exit();
          }

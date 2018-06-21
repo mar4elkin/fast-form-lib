@@ -1,1 +1,1 @@
-<select <?= $obj_var ?>> 
+<select style="<?= $obj_css ?>" <?= $obj_var ?>> 

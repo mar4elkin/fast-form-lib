@@ -2,13 +2,13 @@
    namespace Main;
    class Select
    {
-      public function show($obj_var)
+      public function show($obj_var="", $obj_css="")
       {
          if (preg_match("/(accesskey|autofocus|disabled|form|multiple|name|required|size|tabindex)/", $obj_var))
          {
 
            include MAIN .'/pattern/form_select.php';
-           unset($obj_var);
+           unset($obj_var, $obj_css);
            return;
            exit();
 
@@ -16,7 +16,7 @@
 
            echo "select not ok";
 
-           unset($obj_var, $obj_text);
+           unset($obj_var, $obj_text, $obj_css);
            return false;
            exit();
          }
