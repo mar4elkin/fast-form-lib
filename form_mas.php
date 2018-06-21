@@ -34,8 +34,4 @@ define('MAIN', __DIR__);
    $select = (Factory::getClass($type_select));
    $textarea = (Factory::getClass($type_textarea));
 
-   echo $form->show('target="name of window"');
-   echo $input->show('type ="submit" value="send"', 'text');
-   echo $form->show_end();
-
  ?>
