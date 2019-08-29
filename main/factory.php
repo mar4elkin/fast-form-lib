@@ -1,9 +1,6 @@
 <?php
   namespace Main;
 
-  use Main\Form       as Form;
-  use Main\Input      as Input;
-
   abstract class Factory {
     public static function getClass($class) {
       switch($class) {
@@ -16,7 +13,7 @@
         case 'button':
          return new Button();
          break;
-        case 'lable':            
+        case 'lable':
           return new Lable();
           break;
         case 'legend':
