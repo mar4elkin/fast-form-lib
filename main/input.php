@@ -1,6 +1,6 @@
 <?php
 namespace Main;
- class Input
+ class Input extends Debug
  {
 
    public function show($obj_var="", $obj_text="", $obj_css="")
@@ -17,10 +17,30 @@ namespace Main;
      }else {
 
        echo "input not ok";
+       $debug = new Debug;
+       $debug->form_error();
+
        unset($obj_var, $obj_text, $obj_css);
        return false;
        exit();
      }
+   }
+
+   public function blank() {
+
+    $obj_var = "";
+
+    $obj_css = "";
+    
+    $obj_text = "";
+    
+    include MAIN .'/pattern/input_shab.php';
+
+    return;
+
+    exit();
+
+
    }
 }
 ?>

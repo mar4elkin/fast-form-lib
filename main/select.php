@@ -21,6 +21,23 @@
            exit();
          }
       }
+
+      public function blank() {
+
+        $obj_var = "";
+    
+        $obj_css = "";
+    
+        
+        include MAIN .'/pattern/form_select.php';
+    
+        return;
+    
+        exit();
+    
+    
+       }
+
       public function show_end()
       {
         include MAIN .'/pattern/form_select_end.php';

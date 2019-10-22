@@ -23,6 +23,22 @@
         }
 
       }
+      public function blank() {
+
+        $obj_var = "";
+    
+        $obj_css = "";
+        
+        $obj_text = "";
+        
+        include MAIN .'/pattern/form_fieldset.php';
+    
+        return;
+    
+        exit();
+    
+    
+       }
    }
 
  ?>

@@ -22,6 +22,22 @@
             exit();
           }
       }
+      public function blank() {
+
+        $obj_var = "";
+    
+        $obj_css = "";
+        
+        $obj_text = "";
+        
+        include MAIN .'/pattern/form_option.php';
+    
+        return;
+    
+        exit();
+    
+    
+       }
       public function show_end()
       {
         include MAIN .'/pattern/form_optgroup_end.php';

@@ -21,6 +21,22 @@
         }
 
       }
+      public function blank() {
+
+        $obj_var = "";
+    
+        $obj_css = "";
+        
+        $obj_text = "";
+        
+        include MAIN .'/pattern/form_textarea.php';
+    
+        return;
+    
+        exit();
+    
+    
+       }
    }
 
  ?>

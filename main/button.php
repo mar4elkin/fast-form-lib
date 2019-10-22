@@ -20,6 +20,22 @@
            exit();
          }
       }
+      public function blank() {
+
+        $obj_var = "";
+    
+        $obj_css = "";
+        
+        $obj_text = "";
+        
+        include MAIN .'/pattern/form_button.php';
+    
+        return;
+    
+        exit();
+    
+    
+       }
    }
 
  ?>
