@@ -11,28 +11,34 @@
 });
 
 define('MAIN', __DIR__);
-// описание типов
-   $type_form = 'form';
-   $type_input = 'input';
-   $type_button = 'button';
-   $type_lable = 'lable';
-   $type_legend = 'legend';
-   $type_fieldset = 'fieldset';
-   $type_optgroup = 'optgroup';
-   $type_option = 'option';
-   $type_select = 'select';
-   $type_textarea = 'textarea';
-//соодение с фермой
-   $form = (Factory::getClass($type_form));
-   $input = (Factory::getClass($type_input));
-   $button = (Factory::getClass($type_button));
-   $lable = (Factory::getClass($type_lable));
-   $legend = (Factory::getClass($type_legend));
-   $fieldset = (Factory::getClass($type_fieldset));
-   $optgroup = (Factory::getClass($type_optgroup));
-   $option = (Factory::getClass($type_option));
-   $select = (Factory::getClass($type_select));
-   $textarea = (Factory::getClass($type_textarea));
+
+include 'settings.php';
+
+   
+// описание типов и соодение с фермой:
+
+   // html types:
+
+      $form      = (Factory::getClass('form'));
+      $input     = (Factory::getClass('input'));
+      $button    = (Factory::getClass('button'));
+      $lable     = (Factory::getClass('lable'));
+      $legend    = (Factory::getClass('legend'));
+      $fieldset  = (Factory::getClass('fieldset'));
+      $optgroup  = (Factory::getClass('optgroup'));
+      $option    = (Factory::getClass('option'));
+      $select    = (Factory::getClass('select'));
+      $textarea  = (Factory::getClass('textarea'));
+    
+   // init debug:
+
+      $debug     = (Factory::getClass('debug'));
+      $debug->show_debug_messages($debug_forms);
+      
+      
+      
+      
+      
 
 
  ?>
