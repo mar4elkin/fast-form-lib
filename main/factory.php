@@ -34,6 +34,9 @@
         case 'textarea':
           return new Textarea();
           break;
+        case 'debug':
+          return new Debug();
+          break;
       }
     }
   }
