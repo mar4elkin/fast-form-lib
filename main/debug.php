@@ -37,37 +37,78 @@
 
     public function form_error($type_form){
         if ($type_form == 'Form'){
-            echo 'error in $form->show()';
+            echo '
+                <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                    error in $form->show()
+                </div>
+            ';
         } 
         if ($type_form == 'Input'){
-            echo 'error in $imput->show()';
+            echo '
+                <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                    error in $input->show()
+                </div>
+            ';
+            
         } 
         if ($type_form == 'Button'){
-            echo 'error in $button->show()';
+            echo '
+                <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                    error in $button->show()
+                </div>
+            ';
+        
         } 
         if ($type_form == 'Lable'){
-            echo 'error in $lable->show()';
+            echo '
+                <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                    error in $lable->show()
+                </div>
+            ';
         } 
         if ($type_form == 'Legend'){
-            echo 'error in $legend->show()';
+            echo '
+            <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                error in $legend->show()
+            </div>
+        ';
         } 
         if ($type_form == 'Fieldset'){
-            echo 'error in $fieldset->show()';
+            echo '
+            <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                error in $fieldset->show()
+            </div>
+        ';
         } 
         if ($type_form == 'Optgroup'){
-            echo 'error in $optgroup->show()';
+            echo '
+            <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                error in $optgroup->show()
+            </div>
+        ';
         } 
         if ($type_form == 'Option'){
-            echo 'error in $option->show()';
+            echo '
+            <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                error in $option->show()
+            </div>
+        ';
         } 
         if ($type_form == 'Select'){
-            echo 'error in $select->show()';
+            echo '
+            <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                error in $select->show()
+            </div>
+        ';
         } 
         if ($type_form == 'Textarea'){
-            echo 'error in $textarea->show()';
+            echo '
+            <div style="position: absolute;bottom: 5px;left: 4px;" class="alert alert-danger" role="alert">
+                error in $textarea->show()
+            </div>
+        ';
         } 
     }
-    // расписать для каждего класса и привизать к settings.php
 }
 
  ?>
