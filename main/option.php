@@ -14,7 +14,13 @@
 
          } else {
 
-           echo "option not ok";
+          $debug = new Debug;
+          $debug_arr = $debug->debug_arr_status();
+   
+          if ($debug_arr[7] == 'T') {
+             $debug->form_error('Option');
+          }
+
 
            unset($obj_var, $obj_text, $obj_css);
            return false;

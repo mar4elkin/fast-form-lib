@@ -14,7 +14,12 @@
 
          } else {
 
-           echo "select not ok";
+          $debug = new Debug;
+          $debug_arr = $debug->debug_arr_status();
+   
+          if ($debug_arr[8] == 'T') {
+             $debug->form_error('Select');
+          }
 
            unset($obj_var, $obj_text, $obj_css);
            return false;

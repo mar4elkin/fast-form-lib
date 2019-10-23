@@ -1,5 +1,6 @@
 <?php
 namespace Main;
+
  class Input extends Debug
  {
 
@@ -15,10 +16,13 @@ namespace Main;
 
 
      }else {
-
-       echo "input not ok";
+      
        $debug = new Debug;
-       $debug->form_error();
+       $debug_arr = $debug->debug_arr_status();
+
+       if ($debug_arr[1] == 'T') {
+          $debug->form_error('Input');
+       }
 
        unset($obj_var, $obj_text, $obj_css);
        return false;

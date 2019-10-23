@@ -16,7 +16,12 @@
 
             } else {
                
-                  echo "form not ok";
+                  $debug = new Debug;
+                  $debug_arr = $debug->debug_arr_status();
+           
+                  if ($debug_arr[0] == 'T') {
+                     $debug->form_error('Form');
+                  }
 
                   unset($obj_var, $obj_css);
 

@@ -15,7 +15,12 @@
 
         } else {
 
-          echo "fieldset not ok";
+          $debug = new Debug;
+          $debug_arr = $debug->debug_arr_status();
+   
+          if ($debug_arr[5] == 'T') {
+             $debug->form_error('Fieldset');
+          }
 
           unset($obj_var, $obj_text, $obj_css);
           return false;
