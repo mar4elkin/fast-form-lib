@@ -4,6 +4,9 @@
   abstract class Factory {
     public static function getClass($class) {
       switch($class) {
+        case 'head':
+          return new Head();
+          break;
         case 'form':
           return new Form();
           break;

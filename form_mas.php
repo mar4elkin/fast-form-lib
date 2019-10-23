@@ -15,7 +15,7 @@ define('MAIN', __DIR__);
 // описание типов и соодение с фермой:
 
    // html types:
-
+      $head      = (Factory::getClass('head'));
       $form      = (Factory::getClass('form'));
       $input     = (Factory::getClass('input'));
       $button    = (Factory::getClass('button'));
