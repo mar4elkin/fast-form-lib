@@ -11,9 +11,6 @@
 });
 
 define('MAIN', __DIR__);
-
-include 'settings.php';
-
    
 // описание типов и соодение с фермой:
 
@@ -32,13 +29,7 @@ include 'settings.php';
     
    // init debug:
 
-      $debug     = (Factory::getClass('debug'));
-      $debug->show_debug_messages($debug_forms);
-      
-      
-      
-      
-      
+      $debug     = (Factory::getClass('debug'));      
 
 
  ?>
