@@ -36,7 +36,7 @@
 
          $obj_var = "";
 
-         $obj_css = "";
+         $obj_css = "width:350px;margin:auto;border-radius:20px 20px 20px 20px;border:1px solid black;margin-top:20px;";
          
          include MAIN . '/pattern/form_shab.php';
 
